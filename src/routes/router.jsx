@@ -9,7 +9,7 @@ const SignIn = lazy(() => import("../pages/common/Signin.jsx"));
 const RegistrationForm = lazy(() => import("../pages/common/registration/register.jsx"));
 const CommonLayout = lazy(() => import("../layouts/commonLayout.jsx"));
 const PaymentSuccess = lazy(() => import("../pages/common/PaymentSuccess.jsx"));
-const PaymentFailure = lazy(() => import("../pages/common/paymentFailure.jsx"));
+const PaymentFailure = lazy(() => import("../pages/common/PaymentFailure.jsx"));
 const Unauthorized = lazy(() => import("../pages/common/unauthorized.jsx"));
 const ErrorFallback = lazy(() => import("../pages/common/ErrorFallback.jsx"));
 const UserLayout = lazy(() => import("../layouts/userLayout.jsx"));
