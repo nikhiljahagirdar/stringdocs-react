@@ -3,6 +3,9 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "engines": {
+    "node": ">=22.0.0"
+  },
   "scripts": {
     "dev": "vite",
     "generate-client": "openapi-ts --input https://hammerhead-app-mtxys.ondigitalocean.app/openapi.json --output ./src/api --client axios",
