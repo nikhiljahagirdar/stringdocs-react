@@ -5,6 +5,7 @@ import { defineConfig, normalizePath } from 'vite';
 import { viteStaticCopy } from 'vite-plugin-static-copy';
 
 const require = createRequire(import.meta.url);
+
 const standardFontsDir = normalizePath(
   path.join(path.dirname(require.resolve('pdfjs-dist/package.json')), 'standard_fonts')
 );
@@ -15,7 +16,7 @@ export default defineConfig({
      targets: [
        {
          src: standardFontsDir,
-         dest: '',
+         dest: 'dist/standard_fonts',
        },
      ],
    }),
