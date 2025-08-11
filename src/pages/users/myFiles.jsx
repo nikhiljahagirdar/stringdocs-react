@@ -13,7 +13,7 @@ const MyFiles = () => {
     const [showReport, setShowReport] = useState(false);
     
 
-    const API_URL = 'http://localhost:8000/pdf/getpds';
+    const API_URL = 'https://hammerhead-app-mtxys.ondigitalocean.app/pdf/getpds';
 
     useEffect(() => {
         fetchFiles();

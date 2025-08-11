@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 
 // API endpoints
-const CONFIG_API_URL = 'http://localhost:8000/pdf-config/';
-const UPLOAD_API_URL = 'http://localhost:8000/pdf/upload-pdf/';
+const CONFIG_API_URL = 'https://hammerhead-app-mtxys.ondigitalocean.app/pdf-config/';
+const UPLOAD_API_URL = 'https://hammerhead-app-mtxys.ondigitalocean.app/pdf/upload-pdf/';
 
 // Helper function to format file size
 const formatFileSize = (bytes) => {

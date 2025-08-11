@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "generate-client": "openapi-ts --input http://localhost:8000/openapi.json --output ./src/api --client axios",
+    "generate-client": "openapi-ts --input https://hammerhead-app-mtxys.ondigitalocean.app/openapi.json --output ./src/api --client axios",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"

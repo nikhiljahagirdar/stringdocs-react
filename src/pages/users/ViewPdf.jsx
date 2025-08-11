@@ -6,7 +6,7 @@ function ViewPdf() {
   const { id } = useParams();
   console.log("passed id is",id);
 
-  const url = `http://localhost:8000/pdf/get_pdf/${id}`
+  const url = `https://hammerhead-app-mtxys.ondigitalocean.app/pdf/get_pdf/${id}`
 
   return (
     <div className="w-full flex justify-center items-center h-screen">

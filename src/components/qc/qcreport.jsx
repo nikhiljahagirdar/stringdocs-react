@@ -35,7 +35,7 @@ const PdfQCReport = ({ file_id }) => {
     useEffect(() => {
 
         async function fetchReport() {
-            const result = await axios.get(`http://localhost:8000/http://localhost:8000/pdf-qc/qcByFile?file_id=${file_id}`);
+            const result = await axios.get(`https://hammerhead-app-mtxys.ondigitalocean.app/https://hammerhead-app-mtxys.ondigitalocean.app/pdf-qc/qcByFile?file_id=${file_id}`);
             setReportData(result.data);
             console.log(result.data);
         }

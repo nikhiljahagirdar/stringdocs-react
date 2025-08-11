@@ -183,7 +183,7 @@ const RegistrationForm = () => {
 
           const response = await registerUser(payload);
           if (response.code === 201) {
-            const checkoutSession = await axios.post("http://localhost:8000/payment/create-checkout-session", {
+            const checkoutSession = await axios.post("https://hammerhead-app-mtxys.ondigitalocean.app/payment/create-checkout-session", {
               user_subscription_id: formData.planId,
               stripe_payment_id: formData.price_id,
               amount: formData.amount,

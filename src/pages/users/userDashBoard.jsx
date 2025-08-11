@@ -18,7 +18,7 @@ const UserDashboard = () => {
 
   // Hardcoded user ID and API endpoint
   const userId = 8;
-  const apiUrl = `http://localhost:8000/user-dashboard/user/${userId}`;
+  const apiUrl = `https://hammerhead-app-mtxys.ondigitalocean.app/user-dashboard/user/${userId}`;
 
   useEffect(() => {
     const fetchDashboardData = async () => {
