@@ -1,0 +1,60 @@
+/* src/components/PhoneInputWithCountry.css */
+
+.phone-input-container {
+    margin-bottom: 1rem; /* Add some spacing */
+    font-family: sans-serif;
+    width:100%;
+  }
+
+  .phone-input-container .react-tel-input{
+    width:100%;
+  }
+  
+  .phone-input-container label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  /* Make the input field take full width */
+  .phone-input-wrapper .phone-input-field {
+    width: calc(100% - 60px) !important; /* Adjust width, accounting for flag and some extra space */
+    border: 2px solid #007bff; /* Example border */
+    padding: 12px 12px 12px 60px !important; /* Adjust padding to account for flag */
+    border-radius: 5px;
+    font-size: 1.2rem; /* Increased font size */
+    height: 50px !important; /* Example height */
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.3); /* Example shadow */
+  }
+  
+  /* Style the dropdown button */
+  .phone-input-wrapper .phone-dropdown-button {
+    border: 2px solid #007bff;
+    border-right: none;
+    border-radius: 5px 0 0 5px;
+    background-color: #e0f2ff;
+  }
+  
+  /* Style the dropdown */
+  .phone-input-wrapper .phone-dropdown {
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.2);
+  }
+  
+  .phone-input-wrapper .phone-search-input {
+    margin: 7px;
+    width: calc(100% - 14px);
+    padding: 10px;
+    border: 1px solid #b3d9ff;
+    border-radius: 4px;
+  }
+  
+  /* Style hover/focus states as needed */
+  .phone-input-wrapper .react-tel-input .country-list .country:hover {
+      background-color: #f0f8ff;
+  }
+  
+  .phone-input-wrapper .react-tel-input .country-list .country.highlight {
+      background-color: #cce5ff;
+  }

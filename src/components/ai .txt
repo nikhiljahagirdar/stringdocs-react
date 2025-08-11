@@ -1,0 +1,64 @@
+MoHuman Resources & Talent Acquisition (AI Tools Commonly Used)
+
+HireVue – AI-powered video interviewing and candidate assessment
+
+Pymetrics – AI-driven behavioral assessments for hiring
+
+Eightfold AI – AI talent intelligence for recruitment and workforce planning
+Fetcher – AI-based candidate sourcing and outreach
+
+
+Finance & Accounting (AI Tools Commonly Used)
+
+BlackLine – AI-driven automation for financial close and reconciliation
+
+Vic.ai – AI-powered autonomous accounting and invoice processing
+
+Domo – AI-driven business intelligence and financial analytics
+
+Trullion – AI-assisted lease accounting and revenue recognition
+
+
+1) Communication Skills
+
+chatgpt
+O1 model ->
+
+
+merlin.ai to automate linkedin connection 
+
+1. Install the Merlin Extension
+Go to Merlin’s official site or search for "Merlin AI extension" in the Chrome Web Store.
+Click "Add to Chrome" and enable the extension.
+
+2. Enable Merlin for LinkedIn
+Open LinkedIn and sign in.
+Press Cmd + M (Mac) or Ctrl + M (Windows) to activate Merlin while on LinkedIn.
+You can now use it to generate responses, summarize posts, and write messages.
+
+3. Use Merlin for LinkedIn Tasks
+Generate Connection Requests: Type a prompt like "Write a professional connection request for a recruiter."
+Automate Replies: Use AI-generated responses for LinkedIn messages.
+Summarize Articles & Profiles: Quickly get key insights from long posts or profiles.
+Write LinkedIn Posts: Ask Merlin to draft engaging posts based on your ideas.
+
+4. Optimize with LinkedIn Premium or Sales Navigator (Optional)
+If you use Sales Navigator, Merlin can help craft personalized outreach messages.
+
+
+Notebook LM can generate podcast scripts by analyzing input topics or documents and creating conversational, 
+structured content. It can also simulate dialogues or provide summaries, making podcast production faster and more streamlined.
+
+​NotebookLM is a free AI-powered research and note-taking tool developed by Google. For enhanced features and higher usage limits, 
+NotebookLM Plus is available through the Google One AI Premium subscription, priced at $19.99 per month, which also includes 2TB of storage and 
+access to advanced AI models. ​
+
+
+bolt.new to create podcast
+
+
+automate job to start marketing agency
+
+vapi 
+flow wise 
+gamma.ai
