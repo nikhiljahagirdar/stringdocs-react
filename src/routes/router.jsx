@@ -21,71 +21,39 @@ const ViewPdf = lazy(() => import("../pages/users/ViewPdf.jsx"));
 export const MyRouter = function () {
   return (
     <Router>
-      <Routes>
-        <Route index element={<LandingPage />} />
-        <Route element={<CommonLayout />}>
-          <Route path="/login" element={<SignIn />} />
-          <Route path="/register" element={<RegistrationForm />} />
-          <Route path="/paymentSuccess" element={<PaymentSuccess />} />
-          <Route path="/paymentFailure" element={<PaymentFailure />} />
-          <Route path="/unauthorized" element={<Unauthorized />} />
-          <Route path="/error" element={<ErrorFallback />} />
-        </Route>
+      <Suspense fallback={<div>Loading...</div>}>
+        <Routes>
+          <Route index element={<LandingPage />} />
+          <Route element={<CommonLayout />}>
+            <Route path="/login" element={<SignIn />} />
+            <Route path="/register" element={<RegistrationForm />} />
+            <Route path="/paymentSuccess" element={<PaymentSuccess />} />
+            <Route path="/paymentFailure" element={<PaymentFailure />} />
+            <Route path="/unauthorized" element={<Unauthorized />} />
+            <Route path="/error" element={<ErrorFallback />} />
+          </Route>
 
-        <Route
-          path="user"
-          element={
-            <Suspense fallback={<div>Loading...</div>}>
+          <Route
+            path="user"
+            element={
               <ProtectedRoute element={<UserLayout />} allowedRoles={["user"]} />
-            </Suspense>
-          }
-        >
-          <Route
-            index
-            path="dashboard"
-            element={
-              <Suspense fallback={<div>Loading...</div>}>
-                <ProtectedRoute element={<UserDashboard />} allowedRoles={["user"]} />
-              </Suspense>
             }
-          />
-          <Route
-            path="my-files"
-            element={
-              <Suspense fallback={<div>Loading...</div>}>
-                <ProtectedRoute element={<MyFiles />} allowedRoles={["user"]} />
-              </Suspense>
-            }
-          />
-          <Route
-            path="view-pdf/:id"
-            element={
-              <Suspense fallback={<div>Loading...</div>}>
-                <ProtectedRoute element={<ViewPdf />} allowedRoles={["user"]} />
-              </Suspense>
-            }
-          />
-          <Route
-            path="upload"
-            element={
-              <Suspense fallback={<div>Loading...</div>}>
-                <ProcessPdf />
-              </Suspense>
-            }
-          />
-        </Route>
+          >
+            <Route
+              index
+              path="dashboard"
+              element={<ProtectedRoute element={<UserDashboard />} allowedRoles={["user"]} />}
+            />
+            <Route path="my-files" element={<ProtectedRoute element={<MyFiles />} allowedRoles={["user"]} />} />
+            <Route path="view-pdf/:id" element={<ProtectedRoute element={<ViewPdf />} allowedRoles={["user"]} />} />
+            <Route path="upload" element={<ProcessPdf />} />
+          </Route>
 
-        <Route path="admin" element={<Suspense fallback={<div>Loading...</div>}><AdminLayout /></Suspense>}>
-          <Route
-            index
-            path="dashboard"
-            element={<Suspense fallback={<div>Loading...</div>}><AdminDashboard /></Suspense>}
-          />
-
-
-
-        </Route>
-      </Routes>
+          <Route path="admin" element={<AdminLayout />}>
+            <Route index path="dashboard" element={<AdminDashboard />} />
+          </Route>
+        </Routes>
+      </Suspense>
     </Router>
   );
 };

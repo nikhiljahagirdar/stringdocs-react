@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Rocket, File, Zap, ShieldCheck, LayoutDashboard, Code2, Users, MessageSquare, Bookmark, CheckCircle, Search } from 'lucide-react';
 import  cn  from './utils/tailwindMerge';
-import { motion } from 'framer-motion';
+
 
 // Animation variants
 const containerVariants = {
@@ -62,23 +62,23 @@ const HeroSection = () => {
     return (
         <section className="w-full px-4 sm:px-6 lg:px-8 bg-blue-600 text-white py-20 md:py-32">
             <div className="w-full text-center">
-                <motion.h1
+                <h1
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, ease: 'easeInOut' }}
                     className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-blue-600"
                 >
                     Automate Your PDFs
-                </motion.h1>
-                <motion.p
+                </h1>
+                <p
                     initial={{ opacity: 0, y: -10 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, ease: 'easeInOut', delay: 0.3 }}
                     className="text-lg sm:text-xl md:text-2xl max-w-3xl mx-auto mb-8"
                 >
                     The ultimate solution for automating your PDF workflows. Convert, edit, secure, and manage your documents effortlessly.
-                </motion.p>
-                <motion.div
+                </p>
+                <div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.8, ease: 'easeInOut', delay: 0.6 }}
@@ -91,7 +91,7 @@ const HeroSection = () => {
                     >
                         Get Started
                     </Link>
-                </motion.div>
+                </div>
             </div>
         </section>
     );
@@ -139,14 +139,14 @@ const LandingPage = () => {
             <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 flex-grow">
                 <div className="max-w-7xl mx-auto">
                     <h2 className="text-3xl sm:text-4xl font-semibold text-center text-blue-600 mb-12">Key Features</h2>
-                    <motion.div
+                    <div
                         variants={containerVariants}
                         initial="hidden"
                         animate="visible"
                         className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
                     >
                         {features.map((feature, index) => (
-                            <motion.div
+                            <div
                                 key={index}
                                 variants={itemVariants}
                                 className={cn(
@@ -162,9 +162,9 @@ const LandingPage = () => {
                                 </div>
                                 <h3 className="text-xl font-semibold text-blue-600">{feature.title}</h3>
                                 <p className="text-gray-600">{feature.description}</p>
-                            </motion.div>
+                            </div>
                         ))}
-                    </motion.div>
+                    </div>
                 </div>
             </section>
 
