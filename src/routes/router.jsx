@@ -5,7 +5,7 @@ import ProtectedRoute from "./protectedRoute";
 const LandingPage = lazy(() => import("../Landing.jsx"));
 const AdminLayout = lazy(() => import("../layouts/adminLayout.jsx"));
 const AdminDashboard = lazy(() => import("../pages/admin/adminDashboard.jsx"));
-
+const Login = lazy(() => import("../pages/common/Login.jsx"))
 const RegistrationForm = lazy(() =>
   import("../pages/common/registration/register.jsx")
 );
