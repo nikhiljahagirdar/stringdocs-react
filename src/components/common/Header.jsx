@@ -63,7 +63,7 @@ const Header = ({navLinks}) => {
               <ProfileDropdown user={user} />
             ) : (
               <a
-                href="/login"
+                href="/signin"
                 className="px-3 py-1.5 rounded-md text-xs font-medium bg-white bg-opacity-10 hover:bg-opacity-20 transition-colors mr-2"
               >
                 Login

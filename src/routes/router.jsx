@@ -25,7 +25,7 @@ export const MyRouter = function () {
         <Routes>
           <Route index element={<LandingPage />} />
           <Route element={<CommonLayout />}>
-            <Route path="/login" element={<SignIn />} />
+            <Route path="/signin" element={<SignIn />} />
             <Route path="/register" element={<RegistrationForm />} />
             <Route path="/paymentSuccess" element={<PaymentSuccess />} />
             <Route path="/paymentFailure" element={<PaymentFailure />} />
