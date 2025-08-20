@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch } from "react-redux";
-import { login, logout } from "../../store/slices/authSlice"; // Correct import
+import { login } from "../../store/slices/authSlice"; 
 import { loginUser } from "../../apis/auth"
 
 const Login = () => {
@@ -21,6 +21,7 @@ const Login = () => {
         dispatch(login(response));
       }
     } catch (err) {
+      console.log(err);  
       setError('Invalid credentials');
     } finally {
       setLoading(false);
