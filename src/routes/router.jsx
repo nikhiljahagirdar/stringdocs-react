@@ -6,7 +6,9 @@ const LandingPage = lazy(() => import("../Landing.jsx"));
 const AdminLayout = lazy(() => import("../layouts/adminLayout.jsx"));
 const AdminDashboard = lazy(() => import("../pages/admin/adminDashboard.jsx"));
 
-const RegistrationForm = lazy(() => import("../pages/common/registration/register.jsx"));
+const RegistrationForm = lazy(() =>
+  import("../pages/common/registration/register.jsx")
+);
 const CommonLayout = lazy(() => import("../layouts/commonLayout.jsx"));
 const PaymentSuccess = lazy(() => import("../pages/common/PaymentSuccess.jsx"));
 const PaymentFailure = lazy(() => import("../pages/common/PaymentFailure.jsx"));
@@ -23,7 +25,7 @@ export const MyRouter = function () {
     <Router>
       <Suspense fallback={<div>Loading...</div>}>
         <Routes>
-          <Route index element={<LandingPage />} />          
+          <Route index element={<LandingPage />} />
           <Route element={<CommonLayout />}>
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<RegistrationForm />} />
@@ -36,16 +38,34 @@ export const MyRouter = function () {
           <Route
             path="user"
             element={
-              <ProtectedRoute element={<UserLayout />} allowedRoles={["user"]} />
+              <ProtectedRoute
+                element={<UserLayout />}
+                allowedRoles={["user"]}
+              />
             }
           >
             <Route
               index
               path="dashboard"
-              element={<ProtectedRoute element={<UserDashboard />} allowedRoles={["user"]} />}
+              element={
+                <ProtectedRoute
+                  element={<UserDashboard />}
+                  allowedRoles={["user"]}
+                />
+              }
             />
-            <Route path="my-files" element={<ProtectedRoute element={<MyFiles />} allowedRoles={["user"]} />} />
-            <Route path="view-pdf/:id" element={<ProtectedRoute element={<ViewPdf />} allowedRoles={["user"]} />} />
+            <Route
+              path="my-files"
+              element={
+                <ProtectedRoute element={<MyFiles />} allowedRoles={["user"]} />
+              }
+            />
+            <Route
+              path="view-pdf/:id"
+              element={
+                <ProtectedRoute element={<ViewPdf />} allowedRoles={["user"]} />
+              }
+            />
             <Route path="upload" element={<ProcessPdf />} />
           </Route>
 
